@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    padding: 10px;
+    /* width: 100%; */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.navItems {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.item {
+    list-style-type: none;
+    margin-left: 2.5em;
+}
+
+.item a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    transition: 0.3s;
+    padding: 7px;
+    font-size: large;
+}
+
+.item a:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    padding: 7px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#menu,
+#remove {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    #remove {
+        display: none;
+        font-size: 30px;
+    }
+
+    #menu {
+        display: block;
+        font-size: 30px;
+    }
+
+    .navItems {
+        width: 100vh;
+        height: 40vh;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    }
+
+    .item {
+        margin-bottom: 2em;
+    }
+}
+
+
+/* home section start--------------------- */
+.homeImg {
+    width: 400px;
+    height: 400px;
+}
+
+.homeImg img {
+    width: 100%;
+    border-radius: 500%;
+    box-shadow: rgba(31, 31, 48, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.homeText div {
+    padding: 10px;
+    font-size: xx-large;
+}
+
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fbf7f7;
+}
+
+.homeName {
+    color: aqua;
+
+}
+
+.homeChangeText {
+    color: aqua;
+}
+
+#homeBtn a {
+    background-color: blue;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    list-style-type: none;
+    border-radius: 10px;
+    width: 40px;
+    text-decoration: none;
+}
+
+#homeBtn a:hover {
+    background-color: rgb(111, 111, 235);
+}
+
+@media screen and (max-width: 1012px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fbf7f7;
+        gap: 20px;
+    }
+
+    .homeText div {
+        padding: 10px;
+        font-size: x-large;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 524px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fbf7f7;
+        gap: 20px;
+    }
+
+    .homeText div {
+        padding: 10px;
+        font-size: large;
+        text-align: center;
+    }
+
+    .homeImg {
+        width: 300px;
+        height: 300px;
+
+
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+        background-color: #fbf7f7;
+        gap: 15px;
+    }
+
+    .homeText div {
+        padding: 10px;
+        font-size: small;
+        text-align: center;
+
+    }
+
+    .homeImg {
+        width: 200px;
+        height: 200px;
+
+    }
+
+}
+
+
+
+/* about section ------------------------------------------- */
+
+.about {
+    text-align: center;
+    transition: 0.4s;
+
+}
+
+.aboutText {
+    background-color: rgb(228, 247, 247);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.aboutName {
+    color: aqua;
+    padding-bottom: 20px;
+}
+
+.aboutText h1 {
+    font-size: 45px;
+}
+
+.aboutText p {
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+}
+
+#changeTextOfAbout {
+    color: aqua;
+}
+
+
+
+
+
+
+/* 
+skills--------------start----------
+*/
+.skill {
+    text-align: center;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.skill h1 {
+    font-size: 40px;
+    color: blueviolet;
+}
+
+.skills {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.addSkills {
+    border: 3.5px solid aqua;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+.addSkills:hover {
+    border: 5px solid aqua;
+}
+
+.addSkills img {
+    width: 80%;
+    height: 70%;
+    padding: 15px;
+}
+
+/* project section css start------------------------- */
+
+.projects {
+    min-height: 100vh;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+}
+
+.projectHeading {
+    font-size: 45px;
+    color: rgb(0, 94, 255);
+}
+
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.projectItem {
+    height: auto;
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 15px;
+}
+
+.projectItem img {
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.projectIcon {
+    font-size: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.projectIcon a {
+    margin-left: 15px;
+}
+
+
+/* gitHub css start============== */
+.gitHub{
+    text-align: center;
+    min-height: 100vh;
+    padding-top: 25px;
+}
+ .gitHubText{
+    color: rgb(0, 81, 255)
+ }
+
+
+
+
+
+
+
+
+/* contact details start======================== */
+;
+
+.contact {
+    min-height: 100vh;
+}
+
+.contactMainDiv {
+    text-align: center;
+    background-color: #000;
+    /* margin-bottom: 45px; */
+    padding: 25px;
+
+}
+
+.contactTouch {
+    color: rgb(76, 76, 244);
+}
+
+.contactName {
+    color: #fff;
+    font-size: 40px;
+}
+
+.contactIcon{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.contactIcon a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    background-color: blueviolet;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}

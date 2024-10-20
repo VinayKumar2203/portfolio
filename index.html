@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="vinay.jpeg - Copy.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h1>Vinay</h1>
+        </div>
+        <ul class="navItems">
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#about">About</a></li>
+            <li class="item"><a href="#skill">Skills</a></li>
+            <li class="item"><a href="#projects">Projects</a></li>
+            <li class="item"><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <i id="menu" class="fa-solid fa-bars"></i>
+        <i id="remove" class="fa-solid fa-xmark"></i>
+    </nav>
+
+    <!-- Sections for demo -->
+
+    <section id="home" class="home">
+        <div class="homeText">
+            <div>
+                <h1> Hii !, I am <span class="homeName">Vinay kumar</span></h1>
+                <h2>And I'm a
+                    <span class="homeChangeText">Mern developer</span>
+                </h2>
+            </div>
+            <div id="homeBtn">
+                <a href="resume/Vinay Kumar-168-resume.pdf"> Download CV</a>
+            </div>
+        </div>
+        <div class="homeImg">
+            <img src="vinay.jpeg - Copy.jpg" alt="vinay IMAGE">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="aboutText">
+            <div>
+                <h1 class="aboutName">About</h1>
+                <h1> I am <span id="changeTextOfAbout">Vinay Kumar</span></h1>
+                <p>Proactive Full Stack Web Developer experienced in MERN stack (MongoDB, Express.js, React.js,
+                    Node.js).
+                    Proficient in translating project requirements into scalable web applications. Skilled in frontend
+                    development using React.js and backend development using Node.js and Express.js. Strong
+                    problem-solving
+                    abilities and up-to-date with industry trends and best practices.</p>;
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skill" class="skill">
+        <h1> Skills</h1>
+        <div class="skills">
+            <div class="addSkills">
+                <img src="https://th.bing.com/th/id/OIP.thT5oFZQ6blt7EeQweU7-gHaD_?w=316&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="HTML">
+                <h4>HTML</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://th.bing.com/th/id/OIP.aiII04uB8m611vQPSw7HfgHaHa?w=163&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="CSS">
+                <h4>CSS</h4>
+            </div>
+            <div class="addSkills">
+                <img src="data:image/jpeg;base64,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"
+                    alt="JS">
+                <h4>JavaScript</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://th.bing.com/th/id/OIP.K-4RqDC6zFrpAG31ayDDOgHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="REACT">
+                <h4>React</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://iamnaveen.vercel.app/redux.svg" alt="">
+                <h4>Redux</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://iamnaveen.vercel.app/chakra.png" alt="Chakra">
+                <h4>Chakra UI</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://iamnaveen.vercel.app/vite.svg" alt="vite">
+                <h4>Vite</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://iamnaveen.vercel.app/git.svg" alt="Git">
+                <h4>Git</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://iamnaveen.vercel.app/postman.svg" alt="Postman">
+                <h4>Postman</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://iamnaveen.vercel.app/node-js.svg" alt="Node.js">
+                <h4>Node.js</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://iamnaveen.vercel.app/expressjs.png" alt="">
+                <h4>Express.js</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://iamnaveen.vercel.app/mongoose.png" alt="Mongoose">
+                <h4>Mongoose</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://iamnaveen.vercel.app/bootstrap-4.svg" alt="Bootstrap">
+                <h4>Bootstrap</h4>
+            </div>
+            <div class="addSkills">
+                <img src="https://iamnaveen.vercel.app/tailwind.png" alt="Tailwind">
+                <h4>Tailwind CSS</h4>
+            </div>
+
+
+    </section>
+
+    <!-- Project section------------------------------------------- -->
+
+    <section id="projects" class="projects">
+        <h1 class="projectHeading">Project</h1>
+        <div class="projectContainer">
+            <div class="projectItem">
+                <img src="http://127.0.0.1:3002/calculator.png" alt="project1">
+                <h2>project Name</h2>
+                <p>details of project :- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, expedita!</p>
+                <br>
+                <p> <strong>Tech Stack :-</strong> HTML | CSS | JS | GIT | DOM </p>
+                <div class="projectIcon">
+                    <a href="#"><i class="fa-solid fa-rocket"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="projectItem">
+                <img src="http://127.0.0.1:3002/calculator.png" alt="project1">
+                <h2>project Name</h2>
+                <p>details of project :- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, expedita!</p>
+                <br>
+                <p> <strong>Tech Stack :-</strong> HTML | CSS | JS | GIT | DOM </p>
+                <div class="projectIcon">
+                    <a href="#"><i class="fa-solid fa-rocket"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="projectItem">
+                <img src="http://127.0.0.1:3002/calculator.png" alt="project1">
+                <h2>project Name</h2>
+                <p>details of project :- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, expedita!</p>
+                <br>
+                <p> <strong>Tech Stack :-</strong> HTML | CSS | JS | GIT | DOM </p>
+                <div class="projectIcon">
+                    <a href="#"><i class="fa-solid fa-rocket"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="projectItem">
+                <img src="http://127.0.0.1:3002/calculator.png" alt="project1">
+                <h2>project Name</h2>
+                <p>details of project :- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, expedita!</p>
+                <br>
+                <p> <strong>Tech Stack :-</strong> HTML | CSS | JS | GIT | DOM </p>
+                <div class="projectIcon">
+                    <a href="#"><i class="fa-solid fa-rocket"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- Github Contribution  start ------------>
+    
+    <section id="gitHub" class="gitHub">
+        <h1 class="gitHubText">Github Contribution</h1>
+
+        <div>
+
+            <img src="https://camo.githubusercontent.com/ca133c059a7aa74f88183dc01765d43ab1f85671cd3c3cfd117458b6c5e08a02/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d56696e61794b756d617232323033266c61796f75743d636f6d70616374267468656d653d766973696f6e2d667269656e646c792d6461726b"
+                alt="">
+            <img src="https://github-readme-stats.vercel.app/api?username=VinayKumar2203&show_icons=true&theme=ADD_THEME_HERE"
+                <img
+                src="https://camo.githubusercontent.com/fa332f9ff47080fd857b20f4d2c90cab42d031059474fc9e567cc8f7910dcc76/68747470733a2f2f73747265616b2d73746174732e64656d6f6c61622e636f6d3f757365723d56696e61794b756d617232323033267468656d653d6461726b26646174655f666f726d61743d6a2532304d25354225323059253544"
+                alt="">
+            <p> <a href="https://github.com/ryo-ma/github-profile-trophy">
+                    <img src="https://github-profile-trophy.vercel.app/?username=VinayKumar2203"
+                        alt="VinayKumar2203" /></a>
+            </p>
+
+
+        </div>
+    </section>
+   
+    <!-- Github Contribution  end ------------>
+
+    <!-- contact section start----------------- -->
+
+    <section id="contact" class="contact">
+        <div class="contactMainDiv">
+            <h1 class="contactTouch">Get in touch</h1>
+            <h1 class="contactName">Vinay Kumar</h1>
+            <div class="contactUsContainer">
+                <div>
+                    <img src="https://iamnaveen.vercel.app/assets/anime-B5ne451x.gif" alt="">
+                </div>
+                <div class="contactIcon">
+                    <a href="https://www.linkedin.com/in/vinay-kumar-820301288/"><i class="fa-brands fa-linkedin"></i>
+                        linkedIn</a>
+                    <a href="https://github.com/VinayKumar2203"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i> Email</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> Phone</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+<script src="script.js"></script>
