@@ -401,3 +401,24 @@ skills--------------start----------
     font-size: 15px;
     font-weight: 500;
 }
+body {
+    position: relative;
+}
+
+.mediaConnection {
+    position: absolute;
+    /* position: fixed; */
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid red; */
+    left: 0;
+    bottom: 30px;
+
+}
