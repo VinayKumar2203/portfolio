@@ -120,7 +120,7 @@ nav {
 }
 
 .homeChangeText {
-    color: aqua;
+    color: rgb(86, 224, 224);
 }
 
 #homeBtn a {
@@ -345,14 +345,15 @@ skills--------------start----------
 
 
 /* gitHub css start============== */
-.gitHub{
+.gitHub {
     text-align: center;
     min-height: 100vh;
     padding-top: 25px;
 }
- .gitHubText{
+
+.gitHubText {
     color: rgb(0, 81, 255)
- }
+}
 
 
 
@@ -385,12 +386,13 @@ skills--------------start----------
     font-size: 40px;
 }
 
-.contactIcon{
+.contactIcon {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
 }
+
 .contactIcon a {
     color: #fff;
     text-decoration: none;
@@ -401,6 +403,7 @@ skills--------------start----------
     font-size: 15px;
     font-weight: 500;
 }
+
 body {
     position: relative;
 }

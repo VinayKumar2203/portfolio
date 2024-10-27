@@ -35,7 +35,7 @@
             <div>
                 <h1> Hii !, I am <span class="homeName">Vinay kumar</span></h1>
                 <h2>And I'm a
-                    <span class="homeChangeText">Mern developer</span>
+                    <span id="homeChangeText" class="homeChangeText">Mern developer</span>
                 </h2>
             </div>
             <div id="homeBtn">
@@ -231,7 +231,50 @@
         <a href="https://github.com/VinayKumar2203"><i class="fa-brands fa-square-github"></i></a>
         <a href="https://www.linkedin.com/in/vinay-kumar-820301288/"><i class="fa-brands fa-linkedin"></i></a>
     </div>
+    <div id="formSection">
+        <form name="myForm" onsubmit="sendEmail(); this.reset(); return false;">
+            <label for="name">Name:
+                <input required type="text" placeholder="Enter Name" id="name" name="name">
+            </label><br><br>
+            
+            <label for="phoneNumber">Phone Number:
+                <input required type="number" placeholder="Phone No" id="phoneNumber" name="phoneNumber">
+            </label><br><br>
+            
+            <label for="email">Email:
+                <input required type="email" placeholder="Enter Email" id="email" name="email">
+            </label><br><br>
+            
+            <label for="message">Message:
+                <textarea rows="4" placeholder="Your message here..." id="message" name="message"></textarea>
+            </label><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 
 </html>
 <script src="script.js"></script>
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail() {
+        Email.send({
+            SecureToken:' 9c0d3a0b-ce41-44e2-a20b-0e128a6ccf05',
+            // Host: "smtp.elasticemail.com",
+            // Username: "vinaysikhera2203@gmail.com",
+            // Password: "7D98296719628480BFA12108CF3B9DCDC0DC",
+            To: 'vinaysikhera2203@gmail.com',
+            From: document.getElementById('email').value,
+            Subject: "New Contact Form Enquiry",
+            Body: "Name: " + document.getElementById("name").value
+                + "<br>Email: " + document.getElementById("email").value
+                + "<br>Phone Number: " + document.getElementById("phoneNumber").value
+                + "<br>Message: " + document.getElementById("message").value
+        }).then(
+            message => alert("Email sent successfully: " + message)
+        ).catch(
+            error => alert("Email failed to send: " + error)
+        );
+    }
+</script>

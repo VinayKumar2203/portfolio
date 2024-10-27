@@ -21,7 +21,7 @@ let currentIndex = 0;
 let homeChangeText = document.getElementById('homeChangeText');
 function changeText() {
     console.log(textArray[currentIndex])
-    homeChangeText.textContent = textArray[changeText];
+    homeChangeText.textContent = textArray[currentIndex];
 }
 
 function updateText() {
