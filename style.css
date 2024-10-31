@@ -354,7 +354,16 @@ skills--------------start----------
 .gitHubText {
     color: rgb(0, 81, 255)
 }
-
+.gitHubDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.gitHubDetails img{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+}
 
 
 
@@ -363,65 +372,194 @@ skills--------------start----------
 
 
 /* contact details start======================== */
-;
+
 
 .contact {
-    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    gap: 20px;
+    padding: 30px;
 }
 
 .contactMainDiv {
     text-align: center;
     background-color: #000;
-    /* margin-bottom: 45px; */
     padding: 25px;
-
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
 }
 
 .contactTouch {
     color: rgb(76, 76, 244);
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .contactName {
     color: #fff;
-    font-size: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contactUsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactUsContainer img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .contactIcon {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
+    gap: 15px;
 }
 
 .contactIcon a {
     color: #fff;
     text-decoration: none;
-    margin: 10px;
     background-color: blueviolet;
-    padding: 15px;
+    padding: 10px 20px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 500;
+    transition: background-color 0.3s;
 }
 
-body {
-    position: relative;
+.contactIcon a:hover {
+    background-color: #6a0dad;
 }
 
+/* Form Section Styling */
+#formSection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Media Connection Styling */
 .mediaConnection {
-    position: absolute;
-    /* position: fixed; */
-    position: sticky;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    justify-content: center;
-    font-size: xx-large;
-    height: 100px;
-    width: 100px;
-    /* border: 1px solid red; */
-    left: 0;
+    position: fixed;
+    left: 10px;
     bottom: 30px;
+}
 
+.mediaConnection a {
+    color: #000;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.mediaConnection a:hover {
+    color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contactMainDiv, #formSection {
+        width: 90%;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactIcon a {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .mediaConnection {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactTouch {
+        font-size: 1.5rem;
+    }
+
+    .contactName {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
 }

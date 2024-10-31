@@ -139,7 +139,8 @@
                 <img src="images/image.png" alt="project1">
                 <h2>Portfolio</h2>
                 <p>
-                    A responsive, fast-loading portfolio showcasing projects, skills, and contact options with smooth navigation, animations, and a modern design</p>
+                    A responsive, fast-loading portfolio showcasing projects, skills, and contact options with smooth
+                    navigation, animations, and a modern design</p>
                 <br>
                 <p> <strong>Tech Stack :-</strong> HTML | CSS | JS | GIT | DOM </p>
                 <div class="projectIcon">
@@ -148,11 +149,12 @@
                 </div>
             </div>
             <div class="projectItem">
-                <img src="http://127.0.0.1:3002/calculator.png" alt="project1">
-                <h2>project Name</h2>
-                <p>details of project :- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, expedita!</p>
+                <img src="images/diceGame.png" alt="diceGame">
+                <h2>React Dice Game</h2>
+                <p>Create a simple React-based dice guessing game where the player selects a number, rolls the dice, and
+                    scores points if the dice roll matches the selected number.</p>
                 <br>
-                <p> <strong>Tech Stack :-</strong> HTML | CSS | JS | GIT | DOM </p>
+                <p> <strong>Tech Stack :-</strong> HTML | CSS | JS | GIT |React </p>
                 <div class="projectIcon">
                     <a href="#"><i class="fa-solid fa-rocket"></i></a>
                     <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -183,13 +185,13 @@
         </div>
 
     </section>
-    
+
     <!-- Github Contribution  start ------------>
-    
+
     <section id="gitHub" class="gitHub">
         <h1 class="gitHubText">Github Contribution</h1>
 
-        <div>
+        <div class="gitHubDetails">
 
             <img src="https://camo.githubusercontent.com/ca133c059a7aa74f88183dc01765d43ab1f85671cd3c3cfd117458b6c5e08a02/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d56696e61794b756d617232323033266c61796f75743d636f6d70616374267468656d653d766973696f6e2d667269656e646c792d6461726b"
                 alt="">
@@ -205,7 +207,7 @@
 
         </div>
     </section>
-   
+
     <!-- Github Contribution  end ------------>
 
     <!-- contact section start----------------- -->
@@ -227,31 +229,31 @@
                 </div>
             </div>
         </div>
+        <div id="formSection">
+            <form name="myForm" onsubmit="sendEmail(); this.reset(); return false;">
+                <label for="name">Name:
+                    <input required type="text" placeholder="Enter Name" id="name" name="name">
+                </label><br><br>
+
+                <label for="phoneNumber">Phone Number:
+                    <input required type="number" placeholder="Phone No" id="phoneNumber" name="phoneNumber">
+                </label><br><br>
+
+                <label for="email">Email:
+                    <input required type="email" placeholder="Enter Email" id="email" name="email">
+                </label><br><br>
+
+                <label for="message">Message:
+                    <textarea rows="4" placeholder="Your message here..." id="message" name="message"></textarea>
+                </label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </section>
     <div class="mediaConnection">
         <a href="https://github.com/VinayKumar2203"><i class="fa-brands fa-square-github"></i></a>
         <a href="https://www.linkedin.com/in/vinay-kumar-820301288/"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-    <div id="formSection">
-        <form name="myForm" onsubmit="sendEmail(); this.reset(); return false;">
-            <label for="name">Name:
-                <input required type="text" placeholder="Enter Name" id="name" name="name">
-            </label><br><br>
-            
-            <label for="phoneNumber">Phone Number:
-                <input required type="number" placeholder="Phone No" id="phoneNumber" name="phoneNumber">
-            </label><br><br>
-            
-            <label for="email">Email:
-                <input required type="email" placeholder="Enter Email" id="email" name="email">
-            </label><br><br>
-            
-            <label for="message">Message:
-                <textarea rows="4" placeholder="Your message here..." id="message" name="message"></textarea>
-            </label><br><br>
-            
-            <input type="submit" value="Submit">
-        </form>
     </div>
 </body>
 
@@ -261,7 +263,7 @@
 <script>
     function sendEmail() {
         Email.send({
-            SecureToken:' 9c0d3a0b-ce41-44e2-a20b-0e128a6ccf05',
+            SecureToken: ' 9c0d3a0b-ce41-44e2-a20b-0e128a6ccf05',
             // Host: "smtp.elasticemail.com",
             // Username: "vinaysikhera2203@gmail.com",
             // Password: "7D98296719628480BFA12108CF3B9DCDC0DC",
